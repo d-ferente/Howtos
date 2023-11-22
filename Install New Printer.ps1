@@ -25,4 +25,8 @@ if (-not $checkPortExists) {
 
 Add-Printer -Name Samsung_m4020 -DriverName "$drivename" -PortName IP_"$ip"
 
+
+
+#(New-Object -ComObject WScript.Network).AddWindowsPrinterConnection("\\Printserver01\Xerox5")
+
 #created based on https://github.com/Action1Corp/Howtos/blob/main/Install%20New%20Printer.ps1 by d-ferente
